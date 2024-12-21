@@ -1,4 +1,4 @@
-# NVIM Claude
+# Claude NVIM
 
 Sends selected text to the Anthropic API via [https://github.com/scossar/nvim_conversation_manager](https://github.com/scossar/nvim_conversation_manager). The response is appended to the current buffer.
 
