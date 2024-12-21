@@ -2,7 +2,7 @@ local M = {}
 
 local unix = require("socket.unix")
 local client = nil
-local uv = vim.loop
+-- local uv = vim.loop
 local pending_callbacks = {}
 
 function M.connect()
@@ -77,7 +77,7 @@ function M.send_to_python(text, callback)
 				local cb = pending_callbacks[resp_id]
 				if cb then
 					pending_callbacks[resp_id] = nil
-					schedule_callback(cb.table.concat(lines, "\n"))
+					schedule_callback(cb, table.concat(lines, "\n"))
 				end
 				break
 			end
