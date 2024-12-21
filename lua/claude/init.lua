@@ -42,7 +42,6 @@ function M.send_to_python(text, callback)
 		return
 	end
 
-	-- create a unique request ID
 	local request_id = tostring(math.random(1000000))
 	local full_message = request_id .. "\n" .. text .. "\n---END---\n"
 
