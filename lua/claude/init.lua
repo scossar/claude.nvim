@@ -2,7 +2,6 @@ local M = {}
 
 local unix = require("socket.unix")
 local client = nil
--- local uv = vim.loop
 local pending_callbacks = {}
 
 function M.connect()
