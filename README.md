@@ -6,4 +6,6 @@ only intended to be used with markdown files
 
 a basic plugin made for my own use
 
+use this instead: [https://github.com/scossar/converse.nvim](https://github.com/scossar/converse.nvim)
+
 
